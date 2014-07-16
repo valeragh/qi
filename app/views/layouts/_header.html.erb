@@ -6,13 +6,17 @@
                     </a>
                     <ul class=" nav pull-right">
                         <li id="nav_cart" class="cart">
-                            <%= link_to "+38(066) 860-90-14", contact_path %>
-                                <i class="fa fa-tablet"></i>
+                            <%= link_to contact_path do %>
+                            <i class="fa fa-tablet"></i>
+                            +38(066) 860-90-14
+                                
+                            <% end %>    
                         </li>
                         <li id="nav_cart" class="cart">
-                            <%= link_to "+38(098) 335-29-11", contact_path %>
+                            <%= link_to contact_path do %>
                                 <i class="fa fa-tablet"></i>
-                                
+                                +38(098) 335-29-11
+                            <% end %>    
                             
                         </li>
                     </ul>
